@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List Stoic</title>
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="layout.css" />
+    <!-- End of CSS Import -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Fonts -->
+  </head>
+  <body>
+    <!-- App Wrapper -->
+    <main class="app">
+      <!-- Greeting -->
+      <section class="greeting">
+        <h2 class="title">
+          Procrastinator,
+          <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
+      <!-- End of Greeting -->
+
+      <!-- New Todo -->
+      <section class="create-todo">
+        <h3>CREATE A TODO</h3>
+        <form id="new-todo-form">
+          <h4>What's on your todo?</h4>
+          <input
+            type="text"
+            placeholder="add a task"
+            name="content"
+            id="content"
+          />
+
+          <h4>Pick a category</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="large"
+              />
+              <span class="bubble large"></span>
+              <div>Large</div>
+              <div>*</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="medium"
+              />
+              <span class="bubble medium"></span>
+              <div>Medium</div>
+              <div>***</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category3"
+                value="small"
+              />
+              <span class="bubble small"></span>
+              <div>Small</div>
+              <div>*****</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Add todo" />
+        </form>
+      </section>
+      <!-- End of New Todo -->
+
+      <!-- Todo List -->
+      <section class="task">
+        <h3>TODO LIST</h3>
+      </section>
+
+      <section class="sub-L">
+        <div class="small" id="sub-L"></div>
+      </section>
+
+      <section class="sub-M">
+        <div class="medium" id="sub-M"></div>
+      </section>
+
+      <section class="sub-S">
+        <div class="small" id="sub-S"></div>
+      </section>
+
+      <!-- End of Todo List -->
+    </main>
+    <!-- End of App Wrapper -->
+
+    <!-- JS Import -->
+    <!-- End of JS Import -->
+    <script src="todoic.js"></script>
+  </body>
+</html>
